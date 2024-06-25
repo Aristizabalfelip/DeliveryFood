@@ -1,15 +1,13 @@
+import { UserButton } from '@clerk/nextjs'
+import React from 'react'
 
-import { SignIn, SignUp } from "@clerk/nextjs";
-
-
-
-
-export default function Home() {
+function Homepage() {
   return (
-    <SignIn >
-      <div>
-
-      </div>
-    </SignIn>
-  );
+    <div>Holaaa has logrado entrar
+      <UserButton afterSignOutUrl='/'/>
+    </div>
+    
+  )
 }
+
+export default Homepage
